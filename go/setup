@@ -1,0 +1,6 @@
+#remember, source me, don't run me
+
+export GOPATH=$HOME/repos/go-tree/go
+export PATH=$HOME/repos/go-tree/go/bin:$PATH
+
+
