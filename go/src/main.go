@@ -1,17 +1,13 @@
 package main
 
-func compare(x interface{}, y interface{}) bool {
-	if x.(int) < y.(int) {
-		return true
-	} else {
-		return false
-	}
-}
+import (
+	"fmt"
+	"io/ioutil"
+)
 
 func main() {
-	tree := New(compare)
-
-	tree.Insert(1)
-	tree.Insert(2)
-	tree.Insert(3)
+	files, _ := ioutil.ReadDir("./")
+	for _, f := range files {
+		fmt.Println(f.Name())
+	}
 }
